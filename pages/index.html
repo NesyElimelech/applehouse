@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <!-- Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>HackerU Final Project</title>
+  </head>
+  <body dir="rtl" lang="he">
+    <img
+      class="bg-image1"
+      src="../Assets/images/smallStripes.svg"
+      alt="small stripes"
+    />
+    <img
+      class="bg-image2"
+      src="../Assets/images/wideStripes.svg"
+      alt="big stripes"
+    />
+    <!-- Navbar -->
+    <header class="header">
+      <div class="user">
+        <span class="toggleActive" id="toggleActive">התחברות/רישום</span>
+        <i class="fa-solid fa-sign-in-alt"></i>
+      </div>
+      <div class="brand__container">
+        <img
+          src="../Assets/images/appleLogo.png"
+          class="brand__logo"
+          alt="סמל אפל"
+        />
+        <a class="brand" href="index.html">אפלהאוס</a>
+      </div>
+      <!-- Links to other pages -->
+      <nav class="navbar">
+        <ul class="navbar__links">
+          <li class="navbar__links-items">
+            <a href="/pages/index.html" class="navbar__links-items-link"
+              >ראשי</a
+            >
+          </li>
+          <li class="navbar__links-items">
+            <a href="/pages/computer.html" class="navbar__links-items-link"
+              >מק</a
+            >
+          </li>
+          <li class="navbar__links-items">
+            <a href="/pages/iphone.html" class="navbar__links-items-link"
+              >אייפון</a
+            >
+          </li>
+          <li class="navbar__links-items">
+            <a href="/pages/watch.html" class="navbar__links-items-link"
+              >שעון</a
+            >
+          </li>
+          <li class="navbar__links-items">
+            <a href="/pages/contact.html" class="navbar__links-items-link"
+              >צור קשר</a
+            >
+          </li>
+          <!-- Links to other pages ends-->
+        </ul>
+      </nav>
+      <!-- Login form -->
+      <form action="" class="login-form">
+        <h3>התחברות</h3>
+        <input
+          type="email"
+          name=""
+          placeholder="example@gmail.com"
+          id="email"
+          autocomplete="email"
+          class="box"
+        />
+        <input
+          type="password"
+          name=""
+          placeholder="הכנס סיסמא"
+          id="password"
+          autocomplete="new-password"
+          class="box"
+        />
+        <div class="remember">
+          <input type="checkbox" name="remember-me" id="remember-me" />
+          <label for="remember-me">זכור אותי</label>
+        </div>
+        <input type="submit" value="היכנס" class="btn" />
+        <div class="links">
+          <a href="#">שכחתי סיסמא</a>
+          <a href="#">רישום</a>
+        </div>
+      </form>
+    </header>
+    <!-- Navbar ends -->
+    <!-- Hero section -->
+    <main class="hero">
+      <div class="hero__container">
+        <h1 class="hero__title">
+          ברוכים הבאים לאפלהאוס
+          <i class="fa-brands fa-apple"></i>
+        </h1>
+        <p class="hero__subtitle">
+          <em>
+            כאן תוכלו למצוא את כל החדשות, הסיקורים, העדכונים והחידושים בעולם של
+            <strong>Apple</strong>
+          </em>
+        </p>
+
+        <a class="scroll-down" href="#articles"
+          ><i class="fa-solid fa-arrow-circle-down fa-beat"></i
+        ></a>
+      </div>
+    </main>
+    <!-- Hero ends -->
+    <!-- Articles section -->
+    <section class="articles" id="articles">
+      <ul class="articles__listItems">
+        <li class="articles__listItems-item">
+          <article class="article">
+            <h3>פיצ’ר חדש באייפון חושף את האפליקציות החטטניות ביותר שלכם</h3>
+            <figure class="image__container">
+              <img
+                src="../Assets/images/iphonePrivacy.png"
+                alt="iphone privacy report"
+              />
+              <figcaption class="image__caption">
+                הפיצ'ר החדש של האייפון
+              </figcaption>
+            </figure>
+            <p class="article-text">
+              הפיצ’ר החדש – App Privacy Report – מציג למשתמשי iOS באיזו תדירות
+              עושות האפליקציות שמותקנות על המכשירים שלהם שימוש בהרשאות שקיבלו.
+              בנוסף, הפיצ’ר החדש יראה למשתמשים כמה מהמידע הרגיש שאליו נחשפו
+              האפליקציות דרך ההרשאות עובר אח”כ גם לגורמים צד ג’.
+            </p>
+            <a
+              class="outer-link"
+              href="https://www.geektime.co.il/apple-launches-app-privacy-report-in-beta/"
+              target="_blank"
+              >להמשך קריאה</a
+            >
+          </article>
+        </li>
+        <li class="articles__listItems-item">
+          <article class="article">
+            <h3>איזה אפל ווטש לקנות?</h3>
+            <iframe
+              width="680"
+              height="370"
+              src="https://www.youtube.com/embed/eUj41xapzKA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p>סיקור של אלון גרעיני על האפל ווטש סדרה 7</p>
+          </article>
+        </li>
+        <li class="articles__listItems-item">
+          <article class="article">
+            <h3>כל דגמי האייפון 13 זמינים עכשיו לרכישה בישראל</h3>
+            <figure class="image__container">
+              <img
+                src="https://www.gadgety.co.il/wp-content/themes/main/thumbs/2021/09/iPhone-13-Pro-colors.webp"
+                alt="iphone 13 models"
+              />
+              <figcaption class="image__caption">דגמי iPhone 13 Pro</figcaption>
+            </figure>
+            <p class="article-text">
+              אפל משיקה היום (ה’, 14.10) באופן רשמי את ארבעה הדגמים החדשים בסדרת
+              ה-iPhone 13, אלו יהיו זמינים לרכישה במגוון רחב של חנויות ורשתות
+              בישראל, כאשר טווח המחירים השנה רחב יותר לאחר שבחברה בחרו להוסיף
+              אפשרות למכשירים עם נפח אחסון גבוה במיוחד של 1 טרה-בייט, אשר מוביל
+              לראשונה את מחיר האייפון אל מעבר ל-7,000 שקלים עבור הגרסה היקרה
+              ביותר.
+            </p>
+            <a
+              class="outer-link"
+              href="https://www.gadgety.co.il/281149/iphone-13-israel/"
+              target="_blank"
+              >להמשך קריאה</a
+            >
+          </article>
+        </li>
+      </ul>
+    </section>
+    <!-- Articles ends -->
+    <!-- Footer -->
+    <footer>
+      <div class="credits">
+        <em>
+          <p>UI/UX: נסי אלימלך</p>
+          <p>פיתוח: נסי אלימלך</p>
+        </em>
+        <span
+          >&copy; נכתב במסגרת פרוייקט גמר למיון בניית אתרים של
+          <strong>
+            <a href="https://www.hackeru.co.il/" target="_blank"> HackerU </a>
+          </strong>
+        </span>
+      </div>
+      <div class="links-container">
+        <ul class="referrals-links">
+          <li class="referrals-links-link">
+            <a
+              href="https://personal-portfolio-one-ruby.vercel.app/"
+              target="_blank"
+              >פורטפוליו אישי</a
+            >
+          </li>
+          <li class="referrals-links-link">
+            <a href="https://www.hackampus.com/" target="_blank">Hackampus</a>
+          </li>
+          <li class="referrals-links-link">
+            <a
+              href="https://fonts.google.com/specimen/Rubik?subset=hebrew"
+              target="_blank"
+              >Google fonts</a
+            >
+          </li>
+          <li class="referrals-links-link">
+            <a href="https://fontawesome.com/v6.0" target="_blank"
+              >FontAwesome</a
+            >
+          </li>
+          <li class="referrals-links-link">
+            <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+    <!-- Fontawesome icons script for animations -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
+      integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../index.js"></script>
+  </body>
+</html>

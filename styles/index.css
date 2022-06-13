@@ -1,0 +1,356 @@
+/* Google fonts import - Rubik font family  */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;0,900;1,300&display=swap");
+
+/* Initial reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: #212121;
+  background-image: linear-gradient(
+    to top,
+    #141414,
+    #151515,
+    #171717,
+    #181818,
+    #191919,
+    #1a1a1a,
+    #1c1c1c,
+    #1d1d1d,
+    #1e1e1f,
+    #202020,
+    #212122,
+    #222324
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111111;
+  z-index: 800;
+}
+
+.header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.header .brand__container {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header .brand__container .brand {
+  text-decoration: none;
+  margin-right: 0.2rem;
+}
+
+.header .brand__logo {
+  height: 3rem;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__links-items-link {
+  margin-right: 1rem;
+  background: transparent;
+  transition: all 340ms ease;
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+}
+
+#menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.login-form {
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
+  width: 25rem;
+  border-radius: 1rem;
+  background: #fff;
+  color: #111111;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: none;
+  z-index: 1000;
+}
+
+.toggleActive {
+  cursor: pointer;
+}
+
+.login-form.active {
+  display: block;
+  -webkit-animation: fadeIn 0.4s linear;
+  animation: fadeIn 0.4s linear;
+}
+
+.login-form h3 {
+  color: #181818;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.login-form .box {
+  width: 100%;
+  border-bottom: 0.2rem solid #181818;
+  border-width: 0.1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  color: #131313;
+  text-transform: none;
+  margin: 1rem 0;
+}
+
+.login-form input {
+  border: none;
+  outline: none;
+}
+
+.login-form .remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.login-form .remember label {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.login-form .btn {
+  width: 100%;
+  text-align: center;
+  padding: 0.31rem 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #e2e2e2;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 4px 5px 13px 2px rgba(0, 0, 0, 0.3);
+  transition: all 340ms linear;
+}
+.login-form .btn:hover {
+  background: #141414;
+  box-shadow: 4px 5px 13px 2px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.login-form .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.login-form .links a {
+  font-size: 1.1rem;
+  color: #222222;
+  text-decoration: none;
+}
+
+.login-form .links a:hover {
+  color: #535353;
+  text-decoration: underline;
+}
+
+.navbar__links-items-link:hover {
+  background: #fff;
+}
+.navbar__links-items-link:hover {
+  color: #111111;
+}
+
+.active {
+  display: block;
+  -webkit-animation: fadeIn 0.4s linear;
+  animation: fadeIn 0.4s linear;
+}
+
+.outer-link {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 340ms ease;
+}
+.outer-link:hover {
+  color: #111111;
+  background-color: #fff;
+}
+
+footer {
+  width: 100%;
+  min-height: max-content;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.credits p {
+  line-height: 2;
+}
+
+.credits span {
+  font-size: 0.7rem;
+}
+
+.credits span a {
+  color: #fff;
+  font-weight: 600;
+}
+.credits span a:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.referrals-links {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-right: 5rem;
+}
+
+.referrals-links-link {
+  margin: 1rem;
+  padding: 1rem;
+}
+.referrals-links-link a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 340ms ease;
+}
+.referrals-links-link a:hover {
+  color: #111111;
+
+  background-color: #fff;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 80em) {
+  .login-form {
+    width: 40%;
+    position: absolute;
+  }
+
+  .login-form .links {
+    flex-direction: column;
+  }
+
+  .header {
+    height: max-content;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+    align-items: flex end;
+  }
+
+  .navbar__links {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .login-form .links a {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .hero .hero__title {
+    font-size: 2.8rem;
+  }
+
+  .hero .hero__subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .login-form {
+    width: 70%;
+    position: absolute;
+  }
+}
+@media (max-width: 40em) {
+  .login-form {
+    width: 80%;
+    position: absolute;
+  }
+
+  .login-form input {
+    font-size: 0.7rem;
+  }
+
+  .header .navbar__links-items-link {
+    font-size: 0.8rem;
+  }
+
+  .referrals-links-link {
+    font-size: 0.6rem;
+    margin-right: 0.5rem;
+  }
+}

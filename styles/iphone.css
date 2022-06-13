@@ -1,0 +1,136 @@
+.hero {
+  margin-top: 6rem;
+
+  background-image: url("https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-1 {
+  font-size: 7rem;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.features {
+  padding: 3rem 1rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #111111;
+}
+
+.features .pro-text {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  font-weight: 600;
+}
+.features .max-text {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  font-weight: 600;
+}
+
+.gaming {
+  width: 100%;
+  color: #111111;
+  text-align: center;
+  background-color: #fff;
+  padding: 3rem;
+  position: relative;
+}
+
+.gaming video {
+  width: 100%;
+}
+
+.gaming .gaming-text {
+  font-size: 1.5rem;
+  margin-top: 1.3rem;
+}
+
+.video-edit {
+  background-color: #fff;
+  color: #111111;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video-edit .video-edit-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.video-edit .title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.video-edit img {
+  margin-bottom: 2rem;
+  width: 40%;
+}
+
+.video-edit .video-edit-content {
+  padding: 1.4rem;
+}
+
+.video-edit .video-edit-content .video-edit-text {
+  margin: 1rem;
+  padding: 3rem;
+}
+
+@media (max-width: 60em) {
+  .heading-1 {
+    font-size: 3rem;
+  }
+  .heading-2 {
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+  }
+  .features .max-text {
+    top: 20%;
+    right: 25%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .features .pro-text {
+    top: 85%;
+    right: 25%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .gaming .gaming-text {
+    font-size: 1.2rem;
+  }
+
+  .video-edit .video-edit-content {
+    flex-wrap: wrap;
+  }
+
+  .video-edit .video-edit-content img {
+    width: 100%;
+  }
+}
